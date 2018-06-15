@@ -1,252 +1,3 @@
-docker rm some-mysql
-docker run --name some-mysql -p 3333:3306 -e MYSQL_USER mysql -e MYSQL_PASSWORD mysql -e  MYSQL_ROOT_PASSWORD root -d mysql
-docker rm some-mysql
-docker run --name some-mysql -p 3333:3306 -e MYSQL_USER mysql -e MYSQL_PASSWORD mysql -e MYSQL_ROOT_PASSWORD root -d mysql
-docker logs some-mysql
- docker run --name some-mysql -p 3333:3306 -e MYSQL_ROOT_PASSWORD rootwerwsdfsdf -e MYSQL_USER mysql -e MYSQL_PASSWORD mysql  -d mysql
- docker run --name some-mysql -p 3333:3306 -e MYSQL_ROOT_PASSWORD=rootwerwsdfsdf -e MYSQL_USER=mysql -e MYSQL_PASSWORD=mysql  -d mysql
-docker rm some-mysql
- docker run --name mysql -p 3333:3306 -e MYSQL_ROOT_PASSWORD=rootwerwsdfsdf -e MYSQL_USER=mysql -e MYSQL_PASSWORD=mysql  -d mysql
-docker logs mysql
-docker ps
-docker logs zabbix-server-mysql
-netstat -an|more 3333
-netstat -an|grep 3333
-mysql
-docker logs mysql
-ls
-docker ps
-docker ps mysql
-docker logs some-zabbix-web-apache-mysql
-docker ps 
-docker rm some-zabbix-web-apache-mysql
-docker rm some-zabbix-web-apache-mysql -f
-docker rm  zabbix-server-mysql -f
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3333 -e MYSQL_USER="mysql" -e MYSQL_PASSWORD="mysql" -d zabbix/zabbix-server-mysql
-docker logs zabbix-server-mysql
-docker rm  zabbix-server-mysql -f
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3333 -e MYSQL_USER="root" -e MYSQL_PASSWORD="rootwerwsdfsdf" -d zabbix/zabbix-server-mysql
-docker logs zabbix-server-mysql
-docker rm mysql -f
-docker run --name mysql -p 3333:3306 -e MYSQL_ROOT_PASSWORD="root"  -d mysql
-docker logs mysql
-docker ps
-history
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3333 -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -d zabbix/zabbix-server-mysql
-docker rm -f zabbix-server-mysql
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3333 -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -d zabbix/zabbix-server-mysql
-docker logs  zabbix-server-mysql
-docker rm -f zabbix-server-mysql
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="192.168.1.101" -e DB_SERVER_PORT=3333 -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -d zabbix/zabbix-server-mysql
-docker logs  zabbix-server-mysql
-docker logs mysql
-docker attach mysql
-docker rm mysql
-docker rm mysql -f
-docker run --name mysql -e MYSQL_ROOT_PASSWORD="root" -d mysql
-docker ps
-docker rm zabbix-server-mysql
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="192.168.1.101" -e DB_SERVER_PORT=3306 -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -d zabbix/zabbix-server-mysql
-docker rm zabbix-server-mysql -f
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="192.168.1.101" -e DB_SERVER_PORT=3306 -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -d zabbix/zabbix-server-mysql
-docker logs zabbix-server-mysql 
-docker rm zabbix-server-mysql -f
-docker run --name zabbix-server-mysql  -p 10051:10051 --net=host -e DB_SERVER_HOST="127.0.0.1" -e DB_SERVER_PORT=3306 -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -d zabbix/zabbix-server-mysql
-docker logs zabbix-server-mysql 
-docker rm -f mysql
-docker run --name mysql -e MYSQL_ROOT_PASSWORD=rootpwd -e MYSQL_USER=zabbix -e MYSQL_PASSWORD=zabbixpwd  -d mysql --character-set-server=utf8 --collation-server=utf8_general_ci
-docker logs mysql
-docker run --name zabbix-server-mysql -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3306 -e MYSQL_USER="zabbix" -e MYSQL_PASSWORD="zabbixpwd" -d zabbix/zabbix-server-mysql
-docker rm zabbix-server-mysql -f
-docker run --name zabbix-server-mysql -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3306 -e MYSQL_USER="zabbix" -e MYSQL_PASSWORD="zabbixpwd" -d zabbix/zabbix-server-mysql
-docker logs  zabbix-server-mysql 
-netstat -an|grep 3306
-histroy
-history
-docker ps
-docker logs zabbix-server-mysql
-telnet localhost 3306
-ifconfig -a
-telnet 192.168.1.101 3306
-ping 192.168.1.101
-netstat -an|grep 3306
-docker ps
-docker rm -f mysql
-docker run --name mysql -p3306:3306 -e MYSQL_ROOT_PASSWORD=rootpwd -e MYSQL_USER=zabbix -e MYSQL_PASSWORD=zabbixpwd  -d mysql --character-set-server=utf8 --collation-server=utf8_general_ci
-netstat -an|grep 3306
-docker logs zabbix-server-mysql
-telnet 192.168.1.101 3306
-netstat -an
-netstat -an|grep 3306
-docker ps
-docker rm -f mysql
-docker run --name mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=rootpwd -e MYSQL_USER=zabbix -e MYSQL_PASSWORD=zabbixpwd  -d mysql --character-set-server=utf8 --collation-server=utf8_general_ci
-docker ps
-docker logs mysql
-docker rm -f mysql
-docker run --name mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=rootpwd -e MYSQL_USER=zabbix -e MYSQL_PASSWORD=zabbixpwd  -d mysql 
-df -k
-cd /
-du -sk *
-cd /var
-ls
-du -sk *
-cd lib
-ls
-du -sk *
-cd docker
-ls
-du -sk *
-cd volumes
-ls
-du -sk *
-cd 167587dbe7d4560439d945a33dc70933f885ec4153ab2c18c8782aed88d3fc71
-ls
-cd *
-ls
-cd ..
-ls
-cd ..
-ls
-rm -rf *
-ls
-df -=k
-df -k
-cd /
-ls
-du -sk *|srot
-du -sk *|sort +n
-du -sk
-pwd
-cd /
-du -sk *
-cd tmp
-ls
-rm -rf *
-ls
-df -k
-cd ..
-ls
-du -sk *
-cd usr
-ls
-du -sk *
-cd lib
-ls
-du -sk *
-du -sk *|sort
-du -sk *|sort -n
-cd firmware
-ls
-cd ..
-ls
-cd ..
-cd /var
-du -sk *|sort -n
-cd lib
-ls
-du -sk *|sort -n
-cd docker
-ls
-du -sk *|srot -n
-du -sk *|sort -n
-cd overlay2/
-ls
-du -sk
-df -k
-docker ps
-docker logs mysql
-docker rm -f mysql
-ls
-ps -ef
-docker ps
-docker rm -f some-zabbix-agent
-docker rm -f zabbix-server-mysql
-docker images
-docker run --name mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=rootpwd -e MYSQL_USER=zabbix -e MYSQL_PASSWORD=zabbixpwd  -d mysql 
-docker logs mysql
-docker ps
-netstat -an|grep 3306
-docker run --name zabbix-server-mysql -e DB_SERVER_HOST="localhost" -e DB_SERVER_PORT=3306 -e MYSQL_USER="zabbix" -e MYSQL_PASSWORD="zabbixpwd" -d zabbix/zabbix-server-mysql
-docker logs zabbix-server-mysql
-docker rm -f zabbix-server-mysql
-docker run --name zabbix-server-mysql  -p 10051:10051  -e DB_SERVER_HOST="192.168.1.101" -e DB_SERVER_PORT=3306 -e MYSQL_USER="root" -e MYSQL_PASSWORD="rootpwd" -d zabbix/zabbix-server-mysql
-docker logs zabbix-server-mysql 
-docker images
-docker run --name myshell -v /tmp/mysql:/tmp busybox
-docker run --name myshell -v /tmp/mysql:/tmp busybox -it
-docker rm -f myshell
- docker run --name myshell -v /tmp/mysql:/tmp busybox -it
- docker run --name myshell -v /tmp/mysql:/tmp -it busybox
-docker rm -f myshell
- docker run --name myshell -v /tmp/mysql:/tmp -it busybox
-docker ps
- docker run --name myshell -v /tmp/mysql /tmp -it busybox
-docker rm -f myshell
- docker run --name myshell -v /tmp/mysql /tmp -it busybox
- docker run --name myshell -v /tmp/myshell:/tmp -it busybox
-history
-docker run -d -p 8888:8080 tomcat:8.0
-docker ps
-docker rm -f mysql
-docker rm -f zabbix-server-mysql
-docker rm -f ecstatic_elion
-docker run --name tomcat -d -p 8888:8080 -v /tmp/boco:/usr/local/tomcat/webapps/boco tomcat:8.0
-docker ps
-docker immage
-docker images
-docker ps
-docker list
-kocker --help
-docker 
-docker top
-docker run --name tomcat -d -p 8888:8080 -v /tmp/boco:/usr/local/tomcat/webapps/boco tomcat:8.0
-docker run --name mytomcat -d -p 8888:8080 -v /tmp/boco:/usr/local/tomcat/webapps/boco tomcat:8.0
-docker ps
-ls
-docker stop mytomcat
-docker start mytomcat
-docker top mytomcat
-docker inspect  tomcat
-docker export tomcat >tomcat.tar
-ls
-rm -rf  tomcat.tar
-cd
-ls
-docker sotp mytomcat
-docker stop mytomcat
-docker ps
-docker start mytomcat
-docker ps
-docker run  -p 27017:27017 -v /tmp/mongdb:/data/db 
---name mongodb  mongo
-docker run  -p 27017:27017 -v /tmp/mongdb:/data/db --name mongodb -d mongo
-docker rm mongodb
-docker rm tomcat
-docker run  -p 27017:27017 -v /tmp/mongdb:/data/db --name mongodb -d mongo
-mongo 192.168.1.101:27017
-docker rm -f mongodb
-curl -X GET http://localhost:2376/containers/json?all=1
-curl -X GET http://192.168.1.101:2376/containers/json?all=1
-netstat -an|grep 2376
-netstat -an|more
-curl -X GET http://192.168.1.101:2379/containers/json?all=1
-vi /etc/sysconfig/docker
-systemctl daemon-reload
-systemctl restart docker
-netstat -an|grep 2375
-curl -X GET http://192.168.1.101:2379/containers/json?all=1
-curl -X GET http://192.168.1.101:2375/containers/json?all=1
-curl -X GET http://192.168.1.101:2375/images/json?all=0
-cd
-ls
-kubectl create -f nginx.yaml
-kubectl 
-kubectl delete
-kubectl delete -f nginx.yaml 
-df -k
-curl -X GET http://192.168.1.101:2375/containers/json?all=1
-curl -X GET http://192.168.1.101:2375/images/search?term=tomcat HTTP/1.1
 curl -X GET http://192.168.1.101:2375/images/search?term=tomcat
 curl -X GET http://192.168.1.101:2375/images/json?all=1
 docker images
@@ -998,3 +749,252 @@ python mycurl.py
 ls
 rm -rf xx.py
 ls
+exit
+PS1='[PEXPECT]\$ '
+set prompt='[PEXPECT]\$ '
+PS1='[PEXPECT]\$ '
+set prompt='[PEXPECT]\$ '
+PS1='[PEXPECT]\$ '
+set prompt='[PEXPECT]\$ '
+PS1='[PEXPECT]\$ '
+set prompt='[PEXPECT]\$ '
+history
+ls
+pip3 install xlsxwriter
+ls
+cd python3
+ls
+vi excel_create.py
+python3 excel_create.py 
+ls -lrt
+more /etc/bocoftp
+ftp 192.168.1.5
+more excel_create.py 
+  
+ls
+vi excel_create.py 
+python3 excel_create.py 
+ls
+vi excel_create.py 
+ls
+python3 excel_create.py 
+ls
+python3 excel_create.py 
+vi excel_create.py 
+ls
+python3 excel_create.py 
+ls -lrt
+rm -rf chart_data_table.xlsx
+rm -rf  pycurl-7.19.0.tar.gz
+cd ..
+ls
+pwd
+du -sk *
+rm -rf  epel-release-latest-7.noarch.rpm
+ls
+cd redis
+ls
+cd ..
+git init
+git
+yum install git
+git config --global user.email "chentiande@boco.com.cn" 
+git init
+git remote add origin https://github.com/chentiande/python.git
+git push -u origin master 
+git config --global user.name chentiande
+git config --global user.email "chentiande@boco.com.cn"
+ssh-keyen -t rsa -C "chentiande@boco.com.cn"
+ssh-keygen
+ssh-keygen -t rsa -C "chentiande@boco.com.cn"
+ls
+ls -a
+cd .ssh
+ls
+more id_rsa
+ls
+rm -rf *
+cd 
+ssh-keygen -t rsa -C "chentiande@boco.com.cn"
+ls
+cd .ssh
+ls
+cd id_rsa
+cd id_rsa.pub
+more id_rsa.pub
+cd
+ls
+git init
+git add ./
+git push -u origin master
+git commit -m "first commit"
+git push -u origin master 
+cd
+ls
+env
+echo $prompt
+PS1='\h:\w $ '
+ls
+cd python3
+ls
+more pexpect_monitor.py 
+passwd root
+more pexpect_monitor.py 
+  
+passwd root
+more pexpect_monitor.py 
+passwd root
+su - root
+su - docker
+more /etc/passwd
+ su - halt
+id
+passwd root
+passwd
+du -sk
+ls
+cd python3
+ls
+vi pexpect_monitor.py
+ls
+python3 pexpect_monitor.py
+ssh root@192.168.1.101
+python3 pexpect_monitor.py
+id
+ls
+vi pexpect_monitor.py 
+python3 pexpect_monitor.py
+echo $prompt
+export prompt='%~ ' #
+python3 pexpect_monitor.py
+cd
+ls
+echo $prompt
+cd
+ls
+set prompt='%~ '#
+echo $prompt
+ PS1='/w $ '
+csh
+sh
+ls
+cd python3
+ls
+cd modify_passwd.py 
+more  pexpect_monitor.py 
+bsh
+more /etc/passwd
+PS1='\h:\w $ '
+ls
+cd python3
+ls
+python3  pexpect_monitor.py
+ls
+modify_passwd.py
+vi modify_passwd.py
+python modify_passwd.py
+vi modify_passwd.py 
+python modify_passwd.py
+vi modify_passwd.py 
+python modify_passwd.py
+ls
+vi modify_passwd.py 
+python modify_passwd.py
+pip3 install pexpect
+ls
+vi modify_passwd.py 
+python modify_passwd.py
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py
+python3 modify_passwd.py -h
+python3 modify_passwd.py -u root -p 123456
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 123456
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py
+vi modify_passwd.py 
+python3 modify_passwd.py
+ls
+vi moid
+vi modify_passwd.py 
+python3 modify_passwd.py -h
+vi modi
+vi modify_passwd.py 
+python3 modify_passwd.py -h
+python3 modify_passwd.py -u root -p 123456
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 123456
+python3 modify_passwd.py -
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+vi modify_passwd.py -u root
+python3 modify_passwd.py
+vi modify_passwd.py 
+python3 modify_passwd.py
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root
+vi modify_passwd.py 
+python3 modify_passwd.py -u root
+vi modify_passwd.py 
+python3 modify_passwd.py -u root
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 123456
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 123456
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 123456
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 123456
+python3 modify_passwd.py -u root -p boco123
+python3 modify_passwd.py -u root -p boco123ddd
+id
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p boco123ddd
+python3 modify_passwd.py -u root -p boco123
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p boco123
+python3 modify_passwd.py -u root -p boco123999
+python3 modify_passwd.py -u root -p 55555123999
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 55555123999
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p 55555123999
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p WGjk-123
+
+python3 modify_passwd.py -u root
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p boco123
+ls
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p boco123
+python3 modify_passwd.py -u root
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p boco1234
+vi modify_passwd.py 
+python3 modify_passwd.py -u root -p boco1234
+python3 modify_passwd.py -u root -p boco123
+su - root
