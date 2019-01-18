@@ -10,11 +10,9 @@ import smtplib
 import base64
 # 输入Email地址和口令:
 from_addr = "chentiande@boco.com.cn"
-pw = b"Q2hlX1kyczQ="
-password=base64.b64decode(pw.decode()).decode()
-
+password="123456"
 # 输入收件人地址:
-to_addr = "18919883246@189.cn"
+to_addr = "18888888888@189.cn"
 # 输入SMTP服务器地址:
 smtp_server = "smtp.boco.com.cn"
 
